@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- This is a sample pom configuration for building a suite of substep 
+		acceptance tests based on the webdriver step implementations -->
+
+	<!-- Change these values to something appropriate for your organisation 
+		and project -->
+	<groupId>com.technophobia.substeps</groupId>
+	<artifactId>substeps-bom</artifactId>
+	<version>1.0.2-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+	<name>Substeps bill of materials</name>
+	<description>This project can be added as a dependency to add all necessary substeps dependencies to your project</description>
+
+	<licenses>
+		<license>
+			<name>LGPL 3.0 license</name>
+			<url>http://www.opensource.org/licenses/lgpl-3.0.html</url>
+			<distribution>manual</distribution>
+		</license>
+	</licenses>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<!-- Versions -->
+
+		<core.version>1.0.2-SNAPSHOT</core.version>
+		<junit.runner.version>1.0.2-SNAPSHOT</junit.runner.version>
+		<maven.plugin.version>1.0.2-SNAPSHOT</maven.plugin.version>
+		<ant.runner.version>1.0.2-SNAPSHOT</ant.runner.version>
+		<glossary.builder.version>1.0.2-SNAPSHOT</glossary.builder.version>
+
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>substeps-core</artifactId>
+			<version>${core.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>maven-substeps-plugin</artifactId>
+			<version>${maven.plugin.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>substeps-junit-runner</artifactId>
+			<version>${junit.runner.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>substeps-ant-runner</artifactId>
+			<version>${ant.runner.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>substeps-glossary-builder</artifactId>
+			<version>${glossary.builder.version}</version>
+		</dependency>
+
+	</dependencies>
+
+
+	<!-- this section may be unnecessary depending on your maven configuration -->
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<inherit>true</inherit>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

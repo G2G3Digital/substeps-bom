@@ -1,0 +1,9 @@
+*~
+.project
+_build/
+.classpath
+.settings/
+target/
+*.log
+*.log.*
+example-substeps-project*.zip

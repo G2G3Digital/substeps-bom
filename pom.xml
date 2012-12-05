@@ -91,6 +91,29 @@
 		</plugins>
 	</build>
 
+        <profiles>
+
+               <profile>
+			<id>internalDev</id>
+
+			<distributionManagement>
+				<snapshotRepository>
+					<id>${nexus.snapshot.artifacts}</id>
+					<name>${nexus.snapshot.artifacts}</name>
+					<url>${nexus.snapshot.url}</url>
+					<uniqueVersion>false</uniqueVersion>
+				</snapshotRepository>
+				<repository>
+					<id>${nexus.release.artifacts}</id>
+					<name>${nexus.release.artifacts}</name>
+					<url>${nexus.releases.url}</url>
+				</repository>
+			</distributionManagement>
+
+		</profile>
+
+        </profiles>
+
         <scm>
           <connection>${substeps-core.scm}</connection>
           <developerConnection>${substeps-core.scm}</developerConnection>

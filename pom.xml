@@ -48,7 +48,7 @@
 
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>maven-substeps-plugin</artifactId>
+			<artifactId>substeps-maven-plugin</artifactId>
 			<version>${maven.plugin.version}</version>
 		</dependency>
 
@@ -90,5 +90,12 @@
 			</plugin>
 		</plugins>
 	</build>
+
+        <scm>
+          <connection>${substeps-core.scm}</connection>
+          <developerConnection>${substeps-core.scm}</developerConnection>
+          <url>${substeps-core.scm.url}</url>
+          <tag>HEAD</tag>
+        </scm>
 
 </project>

@@ -115,9 +115,9 @@
         </profiles>
 
         <scm>
-          <connection>${substeps-core.scm}</connection>
-          <developerConnection>${substeps-core.scm}</developerConnection>
-          <url>${substeps-core.scm.url}</url>
+          <connection>${substeps-bom.scm}</connection>
+          <developerConnection>${substeps-bom.scm}</developerConnection>
+          <url>${substeps-bom.scm.url}</url>
           <tag>HEAD</tag>
         </scm>
 

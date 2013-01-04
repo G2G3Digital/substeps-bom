@@ -120,7 +120,7 @@
           <connection>${substeps-bom.scm}</connection>
           <developerConnection>${substeps-bom.scm}</developerConnection>
           <url>${substeps-bom.scm.url}</url>
-          <tag>HEAD</tag>
+         
         </scm>
 
 </project>

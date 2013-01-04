@@ -3,11 +3,6 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<!-- This is a sample pom configuration for building a suite of substep 
-		acceptance tests based on the webdriver step implementations -->
-
-	<!-- Change these values to something appropriate for your organisation 
-		and project -->
 	<groupId>com.technophobia.substeps</groupId>
 	<artifactId>substeps-bom</artifactId>
 	<version>1.1.0-SNAPSHOT</version>
@@ -15,6 +10,13 @@
 	<packaging>pom</packaging>
 	<name>Substeps bill of materials</name>
 	<description>This project can be added as a dependency to add all necessary substeps dependencies to your project</description>
+
+    <!-- for OSS hosting -->
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
 
 	<licenses>
 		<license>

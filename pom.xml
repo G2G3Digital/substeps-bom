@@ -31,11 +31,11 @@
 
 		<!-- Versions -->
 
-		<core.version>1.1.0</core.version>
-		<junit.runner.version>1.1.0</junit.runner.version>
-		<maven.plugin.version>1.1.0</maven.plugin.version>
-		<ant.runner.version>1.1.0</ant.runner.version>
-		<glossary.builder.version>1.1.0</glossary.builder.version>
+		<core.version>1.1.1</core.version>
+		<junit.runner.version>1.1.1</junit.runner.version>
+		<maven.plugin.version>1.1.1</maven.plugin.version>
+		<ant.runner.version>1.1.1</ant.runner.version>
+		<glossary.builder.version>1.1.1</glossary.builder.version>
 
 	</properties>
 
